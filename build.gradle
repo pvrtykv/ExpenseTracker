@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.5.0'
 }
 
 group = 'com.github.pvrtykv'
@@ -19,3 +20,5 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jar.dependsOn bootJar
